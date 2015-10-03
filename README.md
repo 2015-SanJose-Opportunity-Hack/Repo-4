@@ -12,6 +12,7 @@ Literacy Lab provides educational contents for kids in the form of apps. Parents
 covering the entire bay area. With this diverse offering LitLab is challenged in 
 
 >Collecting effective data of the app usage
+
 >Providing customized learning experience
 
 Solution
