@@ -16,4 +16,6 @@ Providing customized learning experience
 
 Solution
 ------------------
-Create an app that collects the usage of the curated LitLab apps and provide customized continious feedback to imporve the leanrning. 
+>Create an app that collects the usage of the curated LitLab apps and provide customized continious feedback to imporve the leanrning. 
+
+>Create analytical models based on the usage data to segment the users and create predictive models to indentify the effective usage patterns.
