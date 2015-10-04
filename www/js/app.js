@@ -41,12 +41,12 @@ angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng'])
     }
   })
 
-  .state('app.initialAssessment', {
-    url: '/initialAssessment',
+  .state('app.evaluvation', {
+    url: '/evaluvation',
     views: {
       'menuContent': {
-        templateUrl: 'templates/initialAssessment.html',
-        controller: 'InitAssessmentCtrl'
+        templateUrl: 'templates/evaluvation.html',
+        controller: 'EvaluvationCtrl'
       }
     }
   })
