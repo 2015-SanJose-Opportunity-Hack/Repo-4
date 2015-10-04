@@ -110,6 +110,16 @@ angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng','pasca
         controller: 'PlaylistCtrl'
       }
     }
+  })
+
+  .state('app.evaluvation', {
+    url: '/evaluvation',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/evaluvation.html',
+        controller: 'EvaluvationCtrl'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
