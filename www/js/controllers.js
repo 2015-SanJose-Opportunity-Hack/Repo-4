@@ -399,7 +399,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Arts',
+          text : 'Initial',
           y : 50
         },
         yAxis : {
@@ -460,7 +460,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Arts',
+          text : 'Final',
           y : 50
         },
         yAxis : {
@@ -521,7 +521,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Fine-Motor',
+          text : 'Initial',
           y : 50
         },
         yAxis : {
@@ -582,7 +582,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Fine-Motor',
+          text : 'Final',
           y : 50
         },
         yAxis : {
@@ -644,7 +644,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Literacy',
+          text : 'Initial',
           y : 50
         },
         yAxis : {
@@ -705,7 +705,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Literacy',
+          text : 'Final',
           y : 50
         },
         yAxis : {
@@ -766,7 +766,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Fine-Motor',
+          text : 'Initial',
           y : 50
         },
         yAxis : {
@@ -827,7 +827,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Fine-Motor',
+          text : 'Final',
           y : 50
         },
         yAxis : {
@@ -1013,7 +1013,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Math/Problem Solving',
+          text : 'Initial',
           y : 50
         },
         yAxis : {
@@ -1074,7 +1074,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Math/Problem Solving',
+          text : 'Final',
           y : 50
         },
         yAxis : {
