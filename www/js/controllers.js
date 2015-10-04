@@ -52,5 +52,32 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('InitAssessmentCtrl', function($scope) {
+      /*$scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+      $scope.series = ['Series A', 'Series B'];
+      $scope.data = [
+        [65, 59, 80, 81, 56, 55, 40],
+        [28, 48, 40, 19, 86, 27, 90]
+      ];*/
+      $scope.chartConfig = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        series: [{
+          data: [10, 15, 12, 8, 7]
+        },
+          {
+            data: [10, 15, 12, 8, 7]
+          }],
+        title: {
+          text: 'Hello'
+        },
+
+        loading: false
+      }
+})
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
