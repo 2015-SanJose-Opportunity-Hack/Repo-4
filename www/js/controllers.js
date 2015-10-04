@@ -889,7 +889,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Social/Emotional',
+          text : 'Initial',
           y : 50
         },
         yAxis : {
@@ -950,7 +950,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           }
         } ],
         title : {
-          text : 'Social/Emotional',
+          text : 'Final',
           y : 50
         },
         yAxis : {
