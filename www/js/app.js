@@ -10,13 +10,21 @@ var translations = {
     "chooseLangText": "Choose language",
     "card1Txt": "(On desktop click and drag from left to right)",
     "card2Txt": "Welcokajf",
-    "card3Txt": "Welcomelja"
+    "card3Txt": "Welcomelja",
+    "text1":"Your child has done a great job this week learning his letter sounds. He's well on the way to being ready for kindergarten!",
+    "text2": "Let's practice learning letter sounds some more. Your child will be reading in no time!",
+    "text3": "Make sure to play some counting games together! Counting is a building block for adding and subtracting.",
+    "text4": "Your child has spent a lot of time this week exploring games that will help her learn how to count."
   },
   "es": {
-    "chooseLangText": "Streichen Sie nach rechts, um die linke Menü offenbaren.",
+    "chooseLangText": "Elige lengua",
     "card1Txt": "(On desktop click and drag from left to right)",
     "card2Txt": "Welcome123",
-    "card3Txt": "Welcome123"
+    "card3Txt": "Welcome123",
+    "text1":"Su hijo ha hecho un gran trabajo esta semana aprender sus sonidos de las letras . Está bien en la manera de estar listo para el kinder!",
+    "text2": "Vamos carta de aprendizaje práctica suena un poco más. Su hijo estará leyendo en poco tiempo!",
+    "text3": "Asegúrese de jugar a algunos juegos de conteo juntos! Contar es un bloque de construcción para sumar y restar.",
+    "text4": "Su hijo ha pasado mucho tiempo esta semana explorando los juegos que le ayudarán a aprender cómo contar."
   }
 };
 
