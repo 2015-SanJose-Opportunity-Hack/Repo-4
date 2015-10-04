@@ -60,22 +60,48 @@ angular.module('starter.controllers', [])
         [28, 48, 40, 19, 86, 27, 90]
       ];*/
       $scope.chartConfig = {
-        options: {
-          chart: {
-            type: 'bar'
+        chart: {
+          type: 'pie',
+          options3d: {
+            enabled: true,
+            alpha: 45,
+            beta: 0
+          }
+        },
+        title: {
+          text: 'Browser market shares at a specific website, 2014'
+        },
+        tooltip: {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            depth: 35,
+            dataLabels: {
+              enabled: true,
+              format: '{point.name}'
+            }
           }
         },
         series: [{
-          data: [10, 15, 12, 8, 7]
-        },
-          {
-            data: [10, 15, 12, 8, 7]
-          }],
-        title: {
-          text: 'Hello'
-        },
-
-        loading: false
+          type: 'pie',
+          name: 'Browser share',
+          data: [
+            ['Firefox',   45.0],
+            ['IE',       26.8],
+            {
+              name: 'Chrome',
+              y: 12.8,
+              sliced: true,
+              selected: true
+            },
+            ['Safari',    8.5],
+            ['Opera',     6.2],
+            ['Others',   0.7]
+          ]
+        }]
       }
 })
 
