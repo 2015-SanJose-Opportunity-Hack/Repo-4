@@ -4,7 +4,23 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng'])
+
+var translations = {
+  "en": {
+    "chooseLangText": "Choose language",
+    "card1Txt": "(On desktop click and drag from left to right)",
+    "card2Txt": "Welcokajf",
+    "card3Txt": "Welcomelja"
+  },
+  "es": {
+    "chooseLangText": "Streichen Sie nach rechts, um die linke Menü offenbaren.",
+    "card1Txt": "(On desktop click and drag from left to right)",
+    "card2Txt": "Welcome123",
+    "card3Txt": "Welcome123"
+  }
+};
+
+angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng','pascalprecht.translate'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -22,7 +38,14 @@ angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $translateProvider) {
+
+      for(var lang in translations){
+        $translateProvider.translations(lang, translations[lang]);
+      }
+
+      $translateProvider.preferredLanguage('en');
+
   $stateProvider
 
     .state('app', {
@@ -65,6 +88,16 @@ angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng'])
         'menuContent': {
           templateUrl: 'templates/playlists.html',
           controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+
+    .state('app.weeklyProgress', {
+      url: '/weeklyProgress',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/weeklyProgress.html',
+          controller: 'WeeklyProgressCtrl'
         }
       }
     })

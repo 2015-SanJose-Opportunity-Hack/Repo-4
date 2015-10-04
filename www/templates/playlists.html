@@ -1,9 +1,35 @@
 <ion-view view-title="Playlists">
   <ion-content>
-    <ion-list>
+    <!--<ion-list>
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
         {{playlist.title}}
       </ion-item>
-    </ion-list>
+    </ion-list>-->
+
+    <label class="item item-input item-select">
+      <div class="input-label" translate="chooseLangText">
+        {{ 'chooseLangText' | translate }}
+      </div>
+      <select ng-change="languageChanged()" ng-model="data.lang">
+        <option ng-selected="true">en</option>
+        <option>es</option>
+      </select>
+    </label>
+
+    <div class="card">
+      <div class="item item-text-wrap" translate="card1Txt">
+        {{ 'card1Txt' | translate }}
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-text-wrap" translate="card2Txt">
+        {{ 'card2Txt' | translate }}
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-text-wrap" translate="card3Txt">
+        {{ 'card3Txt' | translate }}
+      </div>
+    </div>
   </ion-content>
 </ion-view>

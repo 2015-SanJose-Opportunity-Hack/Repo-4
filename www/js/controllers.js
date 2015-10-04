@@ -1,4 +1,25 @@
-angular.module('starter.controllers', [])
+/*var translations = {
+  "en": {
+    "chooseLangText": "Choose language",
+    "hp2": "(On desktop click and drag from left to right)",
+    "ht": "Welcome"
+  },
+  "es": {
+    "chooseLangText": "Streichen Sie nach rechts, um die linke Menü offenbaren.",
+    "hp2": "(Auf dem Desktop klicken und ziehen Sie von links nach rechts)",
+    "ht": "willkommen"
+  }
+};*/
+
+angular.module('starter.controllers', ['pascalprecht.translate'])
+
+    /*.config(function($translateProvider){
+      for(var lang in translations){
+        $translateProvider.translations(lang, translations[lang]);
+      }
+
+      $translateProvider.preferredLanguage('en');
+    })*/
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -41,15 +62,279 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('PlaylistsCtrl', function($scope, $translate) {
+
+      $scope.data = {};
+
+      $scope.languageChanged = function() {
+        console.log('language changed'+$scope.data.lang);
+        console.log('test'+JSON.stringify(translations[$scope.data.lang]));
+        $translate.use($scope.data.lang);
+      }
+
+})
+
+.controller('WeeklyProgressCtrl', function($scope, $translate) {
+
+      $scope.social = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        xAxis: {
+          categories: [''],
+          title: {
+            text: null
+          }
+        },
+        yAxis: {
+          min: 0,
+          max : 20,
+          title: {
+            text: 'Mins.',
+            align: 'high'
+          },
+          labels: {
+            overflow: 'justify'
+          }
+        },
+        tooltip: {
+          valueSuffix: ' millions'
+        },
+        series: [
+          {
+            name: 'Progress',
+            data: [2]
+          },
+          {
+            name: 'Goal',
+            data: [20]
+          }
+        ],
+        title: {
+          text: 'Social/Emotional'
+        },
+
+        loading: false
+      };
+
+      $scope.litVocab = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        xAxis: {
+          categories: [''],
+          title: {
+            text: null
+          }
+        },
+        yAxis: {
+          min: 0,
+          max : 20,
+          title: {
+            text: 'Mins.',
+            align: 'high'
+          },
+          labels: {
+            overflow: 'justify'
+          }
+        },
+        tooltip: {
+          valueSuffix: ' millions'
+        },
+        series: [
+          {
+            name: 'Progress',
+            data: [11]
+          },
+          {
+            name: 'Goal',
+            data: [20]
+          }
+        ],
+        title: {
+          text: 'Literacy/Vocabulary'
+        },
+
+        loading: false
+      };
+
+      $scope.math = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        xAxis: {
+          categories: [''],
+          title: {
+            text: null
+          }
+        },
+        yAxis: {
+          min: 0,
+          max : 30,
+          title: {
+            text: 'Mins.',
+            align: 'high'
+          },
+          labels: {
+            overflow: 'justify'
+          }
+        },
+        tooltip: {
+          valueSuffix: ' millions'
+        },
+        series: [
+          {
+            name: 'Progress',
+            data: [3]
+          },
+          {
+            name: 'Goal',
+            data: [30]
+          }
+        ],
+        title: {
+          text: 'Math/Problem Solving'
+        },
+
+        loading: false
+      };
+
+      $scope.literacy = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        xAxis: {
+          categories: [''],
+          title: {
+            text: null
+          }
+        },
+        yAxis: {
+          min: 0,
+          max : 20,
+          title: {
+            text: 'Mins.',
+            align: 'high'
+          },
+          labels: {
+            overflow: 'justify'
+          }
+        },
+        tooltip: {
+          valueSuffix: ' millions'
+        },
+        series: [
+          {
+            name: 'Progress',
+            data: [17]
+          },
+          {
+            name: 'Goal',
+            data: [20]
+          }
+        ],
+        title: {
+          text: 'Literacy/Storytelling'
+        },
+
+        loading: false
+      };
+
+      $scope.arts = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        xAxis: {
+          categories: [''],
+          title: {
+            text: null
+          }
+        },
+        yAxis: {
+          min: 0,
+          max : 20,
+          title: {
+            text: 'Mins.',
+            align: 'high'
+          },
+          labels: {
+            overflow: 'justify'
+          }
+        },
+        tooltip: {
+          valueSuffix: ' millions'
+        },
+        series: [
+          {
+            name: 'Progress',
+            data: [6]
+          },
+          {
+            name: 'Goal',
+            data: [20]
+          }
+        ],
+        title: {
+          text: 'Arts'
+        },
+
+        loading: false
+      };
+
+      //reading
+      $scope.reading = {
+        options: {
+          chart: {
+            type: 'bar'
+          }
+        },
+        xAxis: {
+          categories: [''],
+          title: {
+            text: null
+          }
+        },
+        yAxis: {
+          min: 0,
+          max : 100,
+          title: {
+            text: 'Mins.',
+            align: 'high'
+          },
+          labels: {
+            overflow: 'justify'
+          }
+        },
+        tooltip: {
+          valueSuffix: ' millions'
+        },
+        series: [
+          {
+            name: 'Progress',
+            data: [60]
+          },
+          {
+            name: 'Goal',
+            data: [100]
+          }
+        ],
+        title: {
+          text: 'Reading/Listening'
+        },
+
+        loading: false
+      };
+
 })
 
 .controller('InitAssessmentCtrl', function($scope) {
