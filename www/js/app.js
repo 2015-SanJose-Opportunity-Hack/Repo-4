@@ -110,6 +110,15 @@ angular.module('starter', ['ionic', 'starter.controllers','highcharts-ng','pasca
       }
     })
 
+      .state('app.profile', {
+        url: '/profile',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/profile.html'
+          }
+        }
+      })
+
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
