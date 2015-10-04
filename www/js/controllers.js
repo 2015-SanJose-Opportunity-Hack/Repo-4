@@ -355,59 +355,6 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
 
 })
 
-.controller('InitAssessmentCtrl', function($scope) {
-      /*$scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-      $scope.series = ['Series A', 'Series B'];
-      $scope.data = [
-        [65, 59, 80, 81, 56, 55, 40],
-        [28, 48, 40, 19, 86, 27, 90]
-      ];*/
-      $scope.chartConfig = {
-        chart: {
-          type: 'pie',
-          options3d: {
-            enabled: true,
-            alpha: 45,
-            beta: 0
-          }
-        },
-        title: {
-          text: 'Browser market shares at a specific website, 2014'
-        },
-        tooltip: {
-          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-          pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            depth: 35,
-            dataLabels: {
-              enabled: true,
-              format: '{point.name}'
-            }
-          }
-        },
-        series: [{
-          type: 'pie',
-          name: 'Browser share',
-          data: [
-            ['Firefox',   45.0],
-            ['IE',       26.8],
-            {
-              name: 'Chrome',
-              y: 12.8,
-              sliced: true,
-              selected: true
-            },
-            ['Safari',    8.5],
-            ['Opera',     6.2],
-            ['Others',   0.7]
-          ]
-        }]
-      }
-})
-
 .controller('PlaylistCtrl', function($scope, $stateParams) {
       //iop
 })
@@ -438,7 +385,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -470,7 +417,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -499,7 +446,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -531,7 +478,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -560,7 +507,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -592,7 +539,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -621,7 +568,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -653,7 +600,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -683,7 +630,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -715,7 +662,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -744,7 +691,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -776,7 +723,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -805,7 +752,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -837,7 +784,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -866,7 +813,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -898,7 +845,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -928,7 +875,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -960,7 +907,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -989,7 +936,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -1021,7 +968,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -1033,6 +980,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         options : {
           chart : {
             type : 'solidgauge'
+//            height:200
           },
           tooltip : {
             enabled : false
@@ -1051,7 +999,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -1083,7 +1031,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
@@ -1112,7 +1060,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           },
           solidgauge : {
             dataLabels : {
-              y : -30,
+              y : -5,
               borderWidth : 0,
               useHTML : true
             }
@@ -1144,7 +1092,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
           tickPixelInterval : 400,
           tickWidth : 0,
           labels : {
-            y : 15
+            y : -70
           }
         },
         loading : false
