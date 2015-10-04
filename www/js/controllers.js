@@ -79,6 +79,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
       $scope.social = {
         options: {
           chart: {
+            height: 200,
             type: 'bar'
           }
         },
@@ -105,15 +106,17 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         series: [
           {
             name: 'Progress',
-            data: [2]
+            data: [2],
+            pointWidth: 10
           },
           {
             name: 'Goal',
-            data: [20]
+            data: [20],
+            pointWidth: 10
           }
         ],
         title: {
-          text: 'Social/Emotional'
+          text: null
         },
 
         loading: false
@@ -122,6 +125,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
       $scope.litVocab = {
         options: {
           chart: {
+            height: 200,
             type: 'bar'
           }
         },
@@ -148,15 +152,17 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         series: [
           {
             name: 'Progress',
-            data: [11]
+            data: [11],
+            pointWidth: 10
           },
           {
             name: 'Goal',
-            data: [20]
+            data: [20],
+            pointWidth: 10
           }
         ],
         title: {
-          text: 'Literacy/Vocabulary'
+          text: null
         },
 
         loading: false
@@ -165,6 +171,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
       $scope.math = {
         options: {
           chart: {
+            height: 200,
             type: 'bar'
           }
         },
@@ -191,15 +198,17 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         series: [
           {
             name: 'Progress',
-            data: [3]
+            data: [3],
+            pointWidth: 10
           },
           {
             name: 'Goal',
-            data: [30]
+            data: [30],
+            pointWidth: 10
           }
         ],
         title: {
-          text: 'Math/Problem Solving'
+          text: null
         },
 
         loading: false
@@ -208,6 +217,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
       $scope.literacy = {
         options: {
           chart: {
+            height: 200,
             type: 'bar'
           }
         },
@@ -234,15 +244,17 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         series: [
           {
             name: 'Progress',
-            data: [17]
+            data: [17],
+            pointWidth: 10
           },
           {
             name: 'Goal',
-            data: [20]
+            data: [20],
+            pointWidth: 10
           }
         ],
         title: {
-          text: 'Literacy/Storytelling'
+          text: null
         },
 
         loading: false
@@ -251,6 +263,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
       $scope.arts = {
         options: {
           chart: {
+            height: 200,
             type: 'bar'
           }
         },
@@ -277,15 +290,17 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         series: [
           {
             name: 'Progress',
-            data: [6]
+            data: [6],
+            pointWidth: 10
           },
           {
             name: 'Goal',
-            data: [20]
+            data: [20],
+            pointWidth: 10
           }
         ],
         title: {
-          text: 'Arts'
+          text: null
         },
 
         loading: false
@@ -295,6 +310,7 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
       $scope.reading = {
         options: {
           chart: {
+            height: 200,
             type: 'bar'
           }
         },
@@ -321,15 +337,17 @@ angular.module('starter.controllers', ['pascalprecht.translate'])
         series: [
           {
             name: 'Progress',
-            data: [60]
+            data: [60],
+            pointWidth: 10
           },
           {
             name: 'Goal',
-            data: [100]
+            data: [100],
+            pointWidth: 10
           }
         ],
         title: {
-          text: 'Reading/Listening'
+          text: null
         },
 
         loading: false
